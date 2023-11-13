@@ -1,0 +1,7 @@
+#arr {
+    color: green;
+}
+
+#sweets, #close1, #close2, #close3 {
+    cursor: pointer;
+}

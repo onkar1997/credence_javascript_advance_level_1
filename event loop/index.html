@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <input type="button" onclick="countRabbits()" value="Count Rabbits !">
+    <input type="button" id="tortoise" value="Tortoise">
+
+    <button onclick="alert(this.innerHTML)">Click Me !</button>
+
+    <button id="btn4">Button 4</button>
+    <button id="btn5">Button 5</button>
+
+    <hr>
+    <h3>Tasks</h3>
+
+    <!-- TASKS -->
+    <!-- Task 1 - Hide Text -->
+    <h4>Task 1 - Hide text</h4>
+    <button id="hide">Click to hide the text</button>
+    <div id="text">Text</div>
+
+
+    <!-- Task 2 - Hide Itself -->
+    <h4>Task 2 - Hide Itself</h4>
+    <button id="t2" onclick="this.hidden=true">Click to hide</button>
+
+
+    <!-- Task 3 - Sliding menu -->
+    <p id="sweets"><span id="arr">&#9658;</span>Sweeties(click me)!</p>
+    <ul id="sweet-lists">
+        <li>Cake</li>
+        <li>Donut</li>
+        <li>Honey</li>
+    </ul>
+
+
+    <!-- Task 4 - Add closing button -->
+    <div id="box1">
+        <h3>Horse</h3>
+        <span id="close1">[X]</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo placeat totam, fugit eius dolorum facilis error, nihil assumenda earum modi. Quibusdam nisi fugiat reprehenderit aliquam voluptates, deserunt dicta alias consequuntur. Minus sequi consequuntur esse odio amet, quae neque earum atque dolor suscipit officiis eum laudantium tempore soluta recusandae necessitatibus.</p>
+    </div>
+    <div id="box2">
+        <h3>Donkey</h3>
+        <span id="close2">[X]</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo placeat totam, fugit eius dolorum facilis
+            error, nihil assumenda earum modi. Quibusdam nisi fugiat reprehenderit aliquam voluptates, deserunt dicta alias
+            consequuntur. Minus sequi consequuntur esse odio amet, quae neque earum atque dolor suscipit officiis eum
+            laudantium tempore soluta recusandae necessitatibus.</p>
+    </div>
+    <div id="box3">
+        <h3>Cat</h3>
+        <span  id="close3">[X]</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo placeat totam, fugit eius dolorum facilis
+            error, nihil assumenda earum modi. Quibusdam nisi fugiat reprehenderit aliquam voluptates, deserunt dicta alias
+            consequuntur. Minus sequi consequuntur esse odio amet, quae neque earum atque dolor suscipit officiis eum
+            laudantium tempore soluta recusandae necessitatibus.</p>
+    </div>
+
+
+    <script>
+        tortoise.onclick = () => { alert('Hi, I am Tortoise :)') } // assign handler
+
+        // tortoise.onclick = null; - removing haddler
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

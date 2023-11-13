@@ -1,0 +1,31 @@
+<!-- create/remove dom element -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let div = document.createElement('div')
+        div.className = 'alert'
+        div.innerHTML = "<strong>Alert! </strong>Hi there..."
+
+        setTimeout(() => document.body.append(div), 200)
+
+        setTimeout(() => div.remove(), 1000)
+    </script>
+</body>
+</html>
